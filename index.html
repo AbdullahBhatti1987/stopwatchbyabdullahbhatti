@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="livewatch">
+        <p id="livehours"></p>
+        <p>:</p>
+        <p id="liveminutes"></p>
+        <p>:</p>
+        <p id="liveseconds"></p>
+        <p id="ampm"></p>
+    </div>
+    <div class="container">
+        <div class="message">
+            <h1>Stop watch Created by Abdullah Bhatti</h1>
+        </div>
+        <div class="watch">
+            <div class="timer">
+                <p class="stopwatch hours" id="hours">00</p>
+                <p class="text">hr</p>
+            </div>
+            <div class="timer">
+                <p class="colun">:</p>
+                <p class="blank">0 </p>
+            </div>
+            <div class="timer">
+                <p class="stopwatch minutes" id="minutes">00</p>
+                <p class="text">min</p>
+            </div>
+            <div class="timer">
+                <p class="colun">:</p>
+                <p class="blank">0</p>
+            </div>
+            <div class="timer">
+                <p class="stopwatch seconds" id="seconds">00</p>
+                <p class="text">sec</p>
+            </div>
+            <div class="timer">
+                <p class="colun">.</p>
+                <p class="blank">0</p>
+            </div>
+            <div class="timer small">
+                <p class="stopwatch miliseconds" id="miliseconds">00</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <p class="button" onclick="play()" id="play">Start</p>
+            <p class="button" onclick="stop()" id="stop">Stop</p>
+            <p class="button" onclick="reset()" id="reset">Reset</p>
+        </div>
+        <!-- <div class="records">
+            <table>
+                <tr class="heading">
+                    <th>Laps</th>
+                    <th>Level</th>
+                    <th>Time</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+        </div> -->
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

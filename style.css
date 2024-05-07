@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+:root{
+    --theme-colour: lightgray;
+    --play-colour: #004275;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.message h1{
+    text-shadow: 0px 0px 5px red;
+    font-size: x-large;
+    padding: 0px;
+    margin: 20px 0px;
+}
+.watch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blank{
+    color: transparent;
+
+}
+p.text, p.blank{
+    font-size: 25px!important;
+    padding: 0px!important;
+    margin: 0px!important;
+
+}
+.timer p.colun{
+    font-size: 70px;
+}
+.timer p{
+    display: flex;
+    font-size: 100px;
+    padding: 0px 5px 0px 5px;
+    margin: 0px;
+}
+.small{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.small p:first-child{
+    font-size: 70px!important;
+ }
+div.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div.buttons p.button{
+    border: 1px solid var(--theme-colour);
+    background-color: var(--theme-colour);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+div.buttons p.button:first-child{
+    background-color: var(--play-colour);
+    color: aliceblue;
+    font-weight: bold;
+}
+div.buttons p:hover{
+    box-shadow: 0px 0px 5px gray;
+    background-color: darkgray;
+    opacity: 0.7;
+}
+div.buttons p:first-child:hover{
+    box-shadow: 0px 0px 8px var(--play-colour)!important;
+    background-color: var(--play-colour)!important;
+    opacity: 1;
+}
+div.buttons p:first-child:active, p:first-child:focus{
+    box-shadow: none!important;
+    background-color: var(--play-colour)!important;
+    opacity: 1;
+}
+div.buttons p:active, p:focus{
+    box-shadow: none;
+}
+div.buttons p:first-child:active, p:first-child:focus{
+    box-shadow: none;
+}
+.records {
+    min-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.records table{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px red;
+}
+.records table tr.heading{
+    border-bottom: 2px solid var(--theme-colour);
+    background-color: var(--theme-colour);
+    width: 100%;
+}
+.records table tr th{
+    padding: 3px;
+    border: 2px solid white;
+}
+.records table tr td{
+    text-align: center;
+    padding: 5px;
+}
+.watch p{
+    text-shadow: 2px 2px 3px gray;
+}
+.watch p.colun, p.blank{
+    text-shadow: none;
+}
+.livewatch{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.livewatch p{
+    font-size: 30px;
+    text-shadow: 2px 2px 3px gray;
+}
+#ampm{
+    font-size: 15px;
+    align-self: flex-end;
+    margin-left: 5px;
+}
